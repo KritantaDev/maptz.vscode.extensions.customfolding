@@ -10,6 +10,12 @@ export interface IConfiguration {
 }
 
 export let DefaultConfiguration :IConfiguration = {
+  "[logos]": {
+    foldEnd: "%end",
+    foldEndRegex: "[\\s]%end",
+    foldStart: "%hook [NAME]",
+    foldStartRegex: "[\\s]%hook[\\s]*(.*)"
+  },
   "[ahk]": {
     foldEnd: "; #endregion",
     foldEndRegex: ";[\\s]*#endregion",
